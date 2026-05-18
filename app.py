@@ -274,7 +274,7 @@ with tab_dolar:
         </h1>
         <p style="color:#7e7a8f; font-size:15px; line-height:1.75; max-width:580px;">
             Un <strong style="color:#ede9e0;">sintético de dólar</strong> es una estrategia de cobertura cambiaria
-            que permite asegurar una tasa de interés en dólares a través de instrumentos adquiribles en pesos.
+            que permite asegurar una tasa de interés en dólares a través de instrumentos en pesos.
             Combina la compra de una <strong style="color:#ede9e0;">LECAP</strong> con la compra de contratos de
             <strong style="color:#ede9e0;">futuros de dólar</strong>, garantizando un rendimiento predecible
             con independencia del tipo de cambio.
