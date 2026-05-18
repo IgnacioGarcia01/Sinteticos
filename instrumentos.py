@@ -18,15 +18,11 @@
 from datetime import date
 
 INSTRUMENTOS = [
-    {"mes": "Ago 2025", "lecap": "S29G5",  "vto": date(2025,  8, 29), "flujo": 157.700, "futuro": "DLRAGO"   },
-    {"mes": "Sep 2025", "lecap": "S30S5",  "vto": date(2025,  9, 30), "flujo": 159.734, "futuro": "DLRSEP"   },
-    {"mes": "Oct 2025", "lecap": "S31O5",  "vto": date(2025, 10, 31), "flujo": 132.821, "futuro": "DLROCT"   },
-    {"mes": "Nov 2025", "lecap": "S28N5",  "vto": date(2025, 11, 28), "flujo": 123.561, "futuro": "DLRNOV"   },
-    {"mes": "Dic 2025", "lecap": "T15D5",  "vto": date(2025, 12, 15), "flujo": 170.838, "futuro": "DLRDIC"   },
-    {"mes": "Ene 2026", "lecap": "T30E6",  "vto": date(2026,  1, 31), "flujo": 142.222, "futuro": "DLRENE26" },
-    {"mes": "Feb 2026", "lecap": "T13F6",  "vto": date(2026,  2, 13), "flujo": 144.960, "futuro": "DLRFEB26" },
-    {"mes": "Mar 2026", "lecap": "TZXM6",  "vto": date(2026,  3, 31), "flujo": 212.570, "futuro": "DLRMAR26" },
-    {"mes": "Abr 2026", "lecap": "S30A6",  "vto": date(2026,  4, 30), "flujo": 127.480, "futuro": "DLRABR26" },
-    {"mes": "May 2026", "lecap": "S29Y6",  "vto": date(2026,  5, 29), "flujo": 127.480, "futuro": "DLRMAY26" },
-    {"mes": "Jun 2026", "lecap": "T30J6",  "vto": date(2026,  6, 30), "flujo": 144.896, "futuro": "DLRJUN26" },
+    {"mes": "May 2026", "lecap": "S29Y6",  "vto": date(2026,  5, 29), "flujo": 132.0438, "futuro": "DLRMAY26"   },
+    {"mes": "Jun 2025", "lecap": "T30J6",  "vto": date(2026,  6, 30), "flujo": 144.8957, "futuro": "DLRJUN26"   },
+    {"mes": "Jul 2025", "lecap": "S31L6",  "vto": date(2026, 7, 31), "flujo": 117.6768, "futuro": "DLRJUL26"   },
+    {"mes": "Ago 2025", "lecap": "S31G6",  "vto": date(2026, 8, 31), "flujo": 127.0637, "futuro": "DLRAGO26"   },
+    {"mes": "Sep 2025", "lecap": "S30S6",  "vto": date(2026, 9, 30), "flujo": 117.5356, "futuro": "DLRSEP26"   },
+    {"mes": "Oct 2026", "lecap": "S30O6",  "vto": date(2026,  10, 30), "flujo": 135.2782, "futuro": "DLROCT26" },
+    {"mes": "Nov 2026", "lecap": "S30N6",  "vto": date(2026,  11, 30), "flujo": 129.8882, "futuro": "DLRNOV26" },
 ]
