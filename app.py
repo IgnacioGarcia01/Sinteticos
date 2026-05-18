@@ -229,7 +229,7 @@ def calcular_sintetico_dolar(monto, precio_letra, precio_futuro, spot, com_fut_p
       Tasa cub. TNA = (1 + rend_dir)^(365/días) − 1
     """
     from datetime import timedelta
-today = date.today() + timedelta(days=1)
+    today = date.today() + timedelta(days=1)
     dias  = (instrumento["vto"] - today).days
 
     com_fut = com_fut_pct / 100
