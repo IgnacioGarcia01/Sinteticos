@@ -26,26 +26,26 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700;900&display=swap');
 
-.stApp { background-color: #eef2fb; }
+.stApp { background-color: #bed6f0; }
 
 /* Tabs */
 .stTabs [data-baseweb="tab-list"] {
     gap: 4px;
-    border-bottom: 1px solid #bfdbfe;
+    border-bottom: 2px solid #5b96d4;
     background: transparent;
 }
 .stTabs [data-baseweb="tab"] {
     background: transparent;
-    color: #64748b;
+    color: #334155;
     border: none;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px 20px;
     font-size: 14px;
 }
 .stTabs [aria-selected="true"] {
-    background: rgba(30,64,175,0.08) !important;
-    color: #1e40af !important;
-    border-bottom: 2px solid #1e40af !important;
+    background: rgba(29,78,216,0.12) !important;
+    color: #1d4ed8 !important;
+    border-bottom: 3px solid #1d4ed8 !important;
     border-radius: 6px 6px 0 0;
 }
 
@@ -53,11 +53,11 @@ st.markdown("""
 input, select, textarea {
     font-family: 'IBM Plex Mono', monospace !important;
     background-color: #ffffff !important;
-    color: #1e293b !important;
-    border: 1px solid #bfdbfe !important;
+    color: #0f172a !important;
+    border: 1.5px solid #3b82f6 !important;
     border-radius: 8px !important;
 }
-label { color: #475569 !important; font-size: 12px !important; }
+label { color: #1e3a5f !important; font-size: 12px !important; font-weight: 600 !important; }
 
 /* Número hero */
 .tasa-hero {
@@ -68,13 +68,13 @@ label { color: #475569 !important; font-size: 12px !important; }
     text-align: center;
     margin: 8px 0;
 }
-.tasa-positive { color: #1e40af; }
-.tasa-negative { color: #dc2626; }
+.tasa-positive { color: #1e3a8a; }
+.tasa-negative { color: #b91c1c; }
 
 /* Card resultado principal */
 .result-hero {
-    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-    border: 1px solid #93c5fd;
+    background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);
+    border: 2px solid #3b82f6;
     border-radius: 16px;
     padding: 32px 24px;
     text-align: center;
@@ -84,12 +84,12 @@ label { color: #475569 !important; font-size: 12px !important; }
     font-size: 11px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #1e40af;
+    color: #1e3a8a;
     font-weight: 700;
     margin-bottom: 8px;
 }
-.result-sub { font-size: 13px; color: #64748b; margin-top: 8px; }
-.result-sub span { color: #1e293b; }
+.result-sub { font-size: 13px; color: #334155; margin-top: 8px; }
+.result-sub span { color: #0f172a; font-weight: 600; }
 
 /* Metric cards secundarias */
 .metric-grid {
@@ -100,13 +100,13 @@ label { color: #475569 !important; font-size: 12px !important; }
 }
 .metric-card {
     background: #ffffff;
-    border: 1px solid #bfdbfe;
+    border: 2px solid #5b96d4;
     border-radius: 10px;
     padding: 16px 18px;
 }
 .metric-card .m-label {
     font-size: 10px;
-    color: #64748b;
+    color: #1e4080;
     text-transform: uppercase;
     letter-spacing: 0.09em;
     font-weight: 700;
@@ -116,9 +116,9 @@ label { color: #475569 !important; font-size: 12px !important; }
     font-family: 'IBM Plex Mono', monospace;
     font-size: 17px;
     font-weight: 600;
-    color: #1e293b;
+    color: #0f172a;
 }
-.metric-card .m-sub { font-size: 11px; color: #64748b; margin-top: 4px; }
+.metric-card .m-sub { font-size: 11px; color: #475569; margin-top: 4px; }
 
 /* Cards de nominales */
 .nominales-grid {
@@ -129,13 +129,13 @@ label { color: #475569 !important; font-size: 12px !important; }
 }
 .nominal-card {
     background: #ffffff;
-    border: 2px solid #3b82f6;
+    border: 3px solid #1d4ed8;
     border-radius: 12px;
     padding: 20px 24px;
 }
 .nominal-card .n-label {
     font-size: 10px;
-    color: #3b82f6;
+    color: #1d4ed8;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
@@ -145,9 +145,9 @@ label { color: #475569 !important; font-size: 12px !important; }
     font-family: 'IBM Plex Mono', monospace;
     font-size: 26px;
     font-weight: 600;
-    color: #1e293b;
+    color: #0f172a;
 }
-.nominal-card .n-sub { font-size: 11px; color: #64748b; margin-top: 4px; }
+.nominal-card .n-sub { font-size: 11px; color: #475569; margin-top: 4px; }
 
 /* Chips */
 .chip-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
@@ -155,13 +155,13 @@ label { color: #475569 !important; font-size: 12px !important; }
     display: inline-flex; align-items: center; gap: 6px;
     padding: 4px 10px;
     background: #ffffff;
-    border: 1px solid #bfdbfe;
+    border: 1.5px solid #60a5fa;
     border-radius: 6px;
     font-size: 12px;
-    color: #1e293b;
+    color: #0f172a;
 }
 .chip .chip-lbl {
-    font-size: 9px; color: #64748b;
+    font-size: 9px; color: #1e4080;
     text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700;
 }
 
@@ -169,17 +169,17 @@ label { color: #475569 !important; font-size: 12px !important; }
 .step-title {
     font-size: 18px;
     font-weight: 700;
-    color: #1e293b;
+    color: #0f172a;
     margin: 28px 0 12px;
     padding-left: 14px;
-    border-left: 3px solid #1e40af;
+    border-left: 4px solid #1d4ed8;
 }
 .step-num {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
-    color: #1e40af;
+    color: #1d4ed8;
     letter-spacing: 0.12em;
-    font-weight: 600;
+    font-weight: 700;
     display: block;
     margin-bottom: 2px;
     padding-left: 14px;
@@ -365,18 +365,18 @@ with tab_dolar:
 
     st.markdown("""
     <div style="padding: 40px 0 20px;">
-        <h1 style="font-size:38px; font-weight:900; line-height:1.1; color:#1e293b; margin-bottom:14px;">
+        <h1 style="font-size:38px; font-weight:900; line-height:1.1; color:#0f172a; margin-bottom:14px;">
             Armá tu sintético<br>de dólar
         </h1>
-        <p style="color:#64748b; font-size:15px; line-height:1.75; max-width:580px;">
-            Un <strong style="color:#1e293b;">sintético de dólar</strong> es una estrategia de cobertura cambiaria
+        <p style="color:#334155; font-size:15px; line-height:1.75; max-width:580px;">
+            Un <strong style="color:#0f172a;">sintético de dólar</strong> es una estrategia de cobertura cambiaria
             que permite asegurar una tasa de interés en dólares a través de instrumentos en pesos.
-            Combina la compra de una <strong style="color:#1e293b;">LECAP</strong> con la compra de contratos de
-            <strong style="color:#1e293b;">futuros de dólar</strong>, garantizando un rendimiento predecible
+            Combina la compra de una <strong style="color:#0f172a;">LECAP</strong> con la compra de contratos de
+            <strong style="color:#0f172a;">futuros de dólar</strong>, garantizando un rendimiento predecible
             con independencia del tipo de cambio.
         </p>
     </div>
-    <hr style="border:none; border-top:1px solid #bfdbfe; margin-bottom:8px;">
+    <hr style="border:none; border-top:2px solid #5b96d4; margin-bottom:8px;">
     """, unsafe_allow_html=True)
 
     # ── PASO 1 — Plazo ────────────────────────────────────────────────────
@@ -416,13 +416,13 @@ with tab_dolar:
         st.markdown(f"""
         <div class="chip-row">
             <span class="chip"><span class="chip-lbl">LECAP</span>
-                <span style="font-family:'IBM Plex Mono',monospace;color:#1e40af;font-weight:500;">{instrumento['lecap']}</span></span>
+                <span style="font-family:'IBM Plex Mono',monospace;color:#1d4ed8;font-weight:700;">{instrumento['lecap']}</span></span>
             <span class="chip"><span class="chip-lbl">Futuro</span>
-                <span style="font-family:'IBM Plex Mono',monospace;color:#3b82f6;font-weight:500;">{instrumento['futuro']}</span></span>
+                <span style="font-family:'IBM Plex Mono',monospace;color:#1d4ed8;font-weight:700;">{instrumento['futuro']}</span></span>
             <span class="chip"><span class="chip-lbl">Vencimiento</span>
-                <span style="font-family:'IBM Plex Mono',monospace;color:#64748b;">{instrumento['vto']}</span></span>
+                <span style="font-family:'IBM Plex Mono',monospace;color:#334155;font-weight:600;">{instrumento['vto']}</span></span>
             <span class="chip"><span class="chip-lbl">Flujo × $100VN</span>
-                <span style="font-family:'IBM Plex Mono',monospace;color:#0ea5e9;">${instrumento['flujo']}</span></span>
+                <span style="font-family:'IBM Plex Mono',monospace;color:#0369a1;font-weight:700;">${instrumento['flujo']}</span></span>
             {"<span class='badge-expired'>Vencido</span>" if expired else ""}
         </div>
         """, unsafe_allow_html=True)
@@ -442,7 +442,7 @@ with tab_dolar:
         monto_fmt   = "$ " + f"{int(monto):,}".replace(",", ".")
         monto_words = numero_a_palabras(int(monto))
         st.markdown(
-            f'<div style="font-size:12px;color:#3b82f6;margin-top:3px;">'
+            f'<div style="font-size:12px;color:#1d4ed8;font-weight:600;margin-top:3px;">'
             f'{monto_fmt} &nbsp;·&nbsp; <em>{monto_words}</em></div>',
             unsafe_allow_html=True,
         )
@@ -503,12 +503,12 @@ with tab_dolar:
         prima_fwd  = (precio_futuro - spot) / spot
         rend_letra = (instrumento["flujo"] / precio_letra - 1) if instrumento else None
         chip_rend  = (f'<span class="chip"><span class="chip-lbl">Rend. letra</span>'
-                      f'<span style="font-family:\'IBM Plex Mono\',monospace;color:#64748b;">{fmt_pct(rend_letra)}</span></span>'
+                      f'<span style="font-family:\'IBM Plex Mono\',monospace;color:#1e4080;font-weight:600;">{fmt_pct(rend_letra)}</span></span>'
                       if rend_letra is not None else "")
         st.markdown(f"""
         <div class="chip-row" style="margin-top:8px;">
             <span class="chip"><span class="chip-lbl">Prima fwd.</span>
-                <span style="font-family:'IBM Plex Mono',monospace;color:#64748b;">{fmt_pct(prima_fwd)}</span></span>
+                <span style="font-family:'IBM Plex Mono',monospace;color:#1e4080;font-weight:600;">{fmt_pct(prima_fwd)}</span></span>
             {chip_rend}
         </div>
         """, unsafe_allow_html=True)
@@ -542,11 +542,11 @@ with tab_dolar:
             monto, precio_letra, precio_futuro, spot, com_fut, com_lec, instrumento
         )
 
-        st.markdown('<hr style="border:none;border-top:1px solid #bfdbfe;margin:8px 0 24px;">', unsafe_allow_html=True)
+        st.markdown('<hr style="border:none;border-top:2px solid #5b96d4;margin:8px 0 24px;">', unsafe_allow_html=True)
         st.markdown("""
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
-            <div style="width:3px;height:22px;background:#1e40af;border-radius:2px;"></div>
-            <h2 style="font-size:20px;font-weight:700;color:#1e293b;margin:0;">Resultados</h2>
+            <div style="width:4px;height:22px;background:#1d4ed8;border-radius:2px;"></div>
+            <h2 style="font-size:20px;font-weight:700;color:#0f172a;margin:0;">Resultados</h2>
         </div>
         """, unsafe_allow_html=True)
 
@@ -604,8 +604,8 @@ with tab_dolar:
         """, unsafe_allow_html=True)
 
         st.markdown("""
-        <p style="font-size:12px;color:#94a3b8;line-height:1.65;margin-top:12px;">
-            <strong style="color:#64748b;">Metodología:</strong>
+        <p style="font-size:12px;color:#475569;line-height:1.65;margin-top:12px;">
+            <strong style="color:#334155;">Metodología:</strong>
             Cant. LECAP = Pesos × (1 − com.LECAP) × 100 / Precio letra ·
             Flujo ARS = Cant. × Flujo / 100 ·
             Cant. Futuros = Flujo ARS / (Precio futuro × 1.000) ·
@@ -617,8 +617,8 @@ with tab_dolar:
     elif plazo_sel and plazo_sel != "Otro (ingreso manual)":
         st.markdown("""
         <div style="margin-top:32px;padding:36px;text-align:center;
-                    border:1px dashed #bfdbfe;border-radius:14px;background:#ffffff;">
-            <p style="font-size:14px;color:#64748b;">
+                    border:2px dashed #60a5fa;border-radius:14px;background:#ffffff;">
+            <p style="font-size:14px;color:#334155;font-weight:500;">
                 Completá todos los campos para ver los resultados.
             </p>
         </div>
@@ -631,10 +631,10 @@ with tab_dolar:
 with tab_pesos:
     st.markdown("""
     <div style="padding:40px 0 20px;">
-        <h1 style="font-size:38px;font-weight:900;color:#1e293b;margin-bottom:14px;">
+        <h1 style="font-size:38px;font-weight:900;color:#0f172a;margin-bottom:14px;">
             Sintético de Pesos
         </h1>
-        <p style="color:#64748b;font-size:15px;line-height:1.75;max-width:580px;">
+        <p style="color:#334155;font-size:15px;line-height:1.75;max-width:580px;">
             Esta sección está en desarrollo.
         </p>
     </div>
