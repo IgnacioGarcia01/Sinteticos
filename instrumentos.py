@@ -26,3 +26,19 @@ INSTRUMENTOS = [
     {"mes": "Oct 2026", "lecap": "S30O6",  "vto": date(2026,  10, 30), "flujo": 135.2782, "futuro": "DLROCT26" },
     {"mes": "Nov 2026", "lecap": "S30N6",  "vto": date(2026,  11, 30), "flujo": 129.8882, "futuro": "DLRNOV26" },
 ]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Base de datos de pares Dólar Linked + Futuro para el sintético de pesos.
+#
+# CAMPOS:
+#   mes    → etiqueta que aparece en el selector   (ej: "Jul 2026")
+#   dlk    → ticker del dólar linked                (ej: "D31L6")
+#   vto    → fecha de vencimiento                   (ej: date(2026, 7, 31))
+#   futuro → contrato ROFEX correspondiente          (ej: "DLRJUL26")
+# ─────────────────────────────────────────────────────────────────────────────
+INSTRUMENTOS_DLK = [
+    {"mes": "Jul 2026", "dlk": "D31L6", "vto": date(2026,  7, 31), "futuro": "DLRJUL26"},
+    {"mes": "Ago 2026", "dlk": "D31G6", "vto": date(2026,  8, 31), "futuro": "DLRAGO26"},
+    {"mes": "Sep 2026", "dlk": "D30S6", "vto": date(2026,  9, 30), "futuro": "DLRSEP26"},
+    {"mes": "Mar 2027", "dlk": "TZV27", "vto": date(2027,  3, 31), "futuro": "DLRMAR27"},
+]
